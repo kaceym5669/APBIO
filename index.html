@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cell Cycle</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script>
+  $(function() {
+    $('button').click(function() {
+      var secret = "If an error occurs during mitosis but the cell still divides, it produces two mutant cells. These mutants can contain the wrong number of chromosomes or broken chromosomes. Since chromosomes carry the cell's DNA, mutant cells will not function normally. This means that mutant cells may die sooner than they should, or they may grow uncontrollably, which results in cancer."
+      $('#secret').html(secret);
+      $('div').slideUp(5)
+    })
+  })
+</script>
+<style>
+  h1 {
+    text-align: center;
+    border: solid 2px;
+     margin:25px;
+     background-color:white;
+     color:blue;
+  }
+
+  h2 {
+    border:solid 2px;
+     margin:25px;
+    text-align: center;
+  background-color:white;
+  color:blue;
+  }
+
+  h4 {
+    border:solid 2px;
+    text-align: center;
+     margin:25px;
+  }
+
+  p {
+    text-align: center;
+    padding: 20px;
+    margin:25px;
+  }
+
+  li {
+    text-align: center; 
+     margin:25px;
+
+  }
+
+  * {
+    background-color: blue;
+    color: white;
+     margin:25px;
+  }
+  button{
+    text-align:center;
+    border:dashed;
+    color:blue;
+    background-color:white;
+  }
+  #secret{
+    border:dashed;
+    background-color: white;
+    color: blue;
+  }
+
+</style>
+
+<body>
+  <div>
+    <h1>Cell Cycle </h1>
+    <p>
+      The Cell Cycle or cell division cycle is a series of steps leading up to division and the duplication of the DNA which is also called mitosis. Mitosis is a type of cell division in which one mother cell, divides to make two daughter cells, that are genetically
+      identical. Mitosis is the part of the division process in which the DNA in nucleus of the mother cell is split into two equal sets of chromosomes. Meiosis, on the other hand, is used to make daughter cells with exactly half as many chromosomes as
+      the starting cell.
+    </p>
+    <h2>Interphase</h2>
+    <p> During interphase, the cell grows and makes a copy of its DNA.<br>
+      <br>
+    </p>
+    <p>Happens in 3 phases:
+      <li>G1</li>
+      <li>S</li>
+      <li>G2</li>
+    </p>
+    <h4>G1 (first growth)</h4>
+    <li>During the G1 phase, aka the first gap phase, the cell grows larger and copies organelles. In most cases, cells do grow before division. However, sometimes during development, cells may intentionally split themselves up into smaller and smaller pieces
+      over successive rounds of cell division.
+    </li>
+    <li>During this phase, the cell makes a variety of proteins that are needed for DNA replication.
+    </li>
+    <h4>S Phase (synthesis)</h4>
+    <li>During this phase, the cell makes a complete copy of the DNA in the nucleus. It also duplicates a microtubule-organizing structure called the centrosome. The centrosomes help separate DNA during M phase.</li>
+    <li>During S phase, which follows G1 phase, all of the chromosomes are replicated. After replication, each chromosome consists of two sister chromatids, doubling the amount of DNA in the cell, even though the ploidy, or chromosome count, of the cell remains
+      at 2n. This is because chromosomes double their number of chromatids after replication, but the nuclei remains diploid as the number of centromeres and chromosomes remains unchanged. So, the number of chromosomes in the nucleus, which determines
+      the ploidy, remains unchanged from the beginning to the end of the S phase.
+    </li>
+    <li>The organelles necessary for the cell division (in M phase) are also made in the S phase.
+    </li>
+    <h4>G2 (second growth)</h4>
+    <li>During the second gap phase, or G2, the cell grows more, makes proteins and organelles, and begins to reorganize its contents in preparation for mitosis. G2 phase ends when mitosis begins.
+    </li>
+    <li>During G2, the cell makes a variety of proteins. Most microtubules, proteins that are required during mitosis, are produced during G2.
+    </li>
+    <li>Here, the nuclear envelope envelopes the nucleus. In this phase, two centrosomes have formed, due to the G1 phase. It is important to note that the DNA replicated in the S phase has not condensed into chromosomes yet. The microtubules that will be
+      used to mobilize the chromosomes in M phase are made in G2.
+    </li>
+    <p>G2 depends on the phases before it (G1 & S) because they must go as planned so that G2 could be properly done. Checkpoints are then present for the purpose of ensuring that the cell has successfully finished all the tasks it is supposed to achieve
+      after each phase. The cell cycle comprises of three checkpoints, M/G1 (Exit M), G1/S (Enter S) and G2/M (Enter M).
+    </p>
+    <h4>The Exit M and Enter S Checkpoints: </h4>
+    <p>Before the cell enters the G1 phase of the interphase, it goes through the Exit M checkpoint. Here, the cell is checked to ensure that it has completed the mitosis phase and is ready for the first growth phase. The cells are specifically checked to
+      see if they have completed the cell division, if the chromosomes have aligned properly, and to ensure that they are attached to spindles.<br>
+      <br> Before the cell commits to the S phase it goes through the G1/S checkpoint, also called Enter S, where the nutritional status of the cell and the DNA integrity are checked. This is a very important step for a cell about to enter the S phase.
+      In yeast, the cell size is used as a proxy to determine if it is ready to go through to the next phase.<br>
+      <br> When and how cells progress through the cell cycle is tightly controlled by a plethora of regulatory proteins. These proteins fall into two groups called cyclins and cyclin-dependent kinases (CDKs). The activity of the CDKs fluctuates along
+      with the cyclins. Cyclins are proteins that regulate the timing of the cell cycle. Their levels fluctuate in the cell cycle, hence their name.<br> Late in mitosis, Cdc14 (a phosphatase) is held hostage in nucleoli; this prevents the activation of
+      APC specificity factor (Cdh1) which is necessary to polyubiquitinated downstream cyclins. This prevents the necessary decrease in the activity of the maturation promoting factor (a cyclin/CDK complex) which halts progression into telophase.<br>
+      <br> The telophase is prolonged long enough to check that chromosomes have segregated properly. Once this is confirmed Cdc14 gets released. The associated downstream cascade leads to lowered levels of the MPF which prompts the progression of the
+      cell past telophase, exiting the mitosis phase and going into G1. Everything that happens in the telophase and the resulting cytokinesis is what we refer to as an exit from mitosis.<br>
+      <br> After the mitosis phase, the cell enters the G1 phase. Upon entry, the DNA pre-replication complexes position themselves at origins preparing for DNA replication at S phase. The G1 cyclin-CDK (cyclin D/CDK2) deactivates Cdh1, thereby activating
+      the expression of the S-phase cyclin-CDK components (e.g. cyclin E/CDK2). The inhibitor of the S phase cyclin-CDK complex is phosphorylated, marking it for degradation by 5 SCF/proteasome. This action leaves the cyclin-CDK complex free to initiate
+      or move the cell along to the next phase of the cycle, the S phase. This signaling cascade itself is fairly conserved across groups, but the specific cyclins and their CDKs may vary.<br>
+      <br> The G1 checkpoint seems to be the determinant for the cell’s fate in the cell cycle. If a cell gets the green light at the G1 checkpoint, it usually makes the rounds (completing the cycle and dividing). Otherwise, it exits the cycle altogether,
+      entering the G0 phase.<br>
+    </p>
+    <h4>G0 Phase</h4>
+    <p>Not all cells are continually replicated. Non-replicating cells are found in a stage of the cell cycle called G0. These cells may be quiescent (dormant) or senescent (aging or deteriorating). Such cells generally enter the G0 phase from G1. Cells
+      may remain quiescent in G0 for an indeterminate period of time (when no more new cells are needed), only to re-enter G1 phase and begin dividing again under specific conditions. While quiescent cells may re-enter the cell cycle, senescent cells
+      do not. One reason that cells trigger senescence is to ensure that damaged or defective DNA sequences is not passed on to daughter cells.
+    </p>
+    <h2>Mitosis</h2>
+    <p>In mitosis, the nuclear DNA of the cell condenses into visible chromosomes and is pulled apart by the mitotic spindle, a specialized structure made out of microtubules. Mitosis takes place in four stages: prophase (sometimes divided into early prophase
+      and prometaphase), metaphase, anaphase, and telophase.
+    </p>
+    <h2>Prophase</h2>
+    <p>There are two types of prophase.</p>
+    <h4>Early Prophase</h4>
+    <p>In early prophase, the cell starts to break down structures and build up others, preparing for division of the chromosomes. During the this process, the mitotic spindle begins to form. The spindle is a structure made of microtubules. Its job is to
+      organize the chromosomes and move them around during mitosis.The nucleolus disappears. This is a sign that the nucleus is getting ready to break down.</p>
+    <h4>Late Prophase</h4>
+    <p>In late prophase, the mitotic spindle begins to capture and organize the chromosomes. The chromosomes finish condensing, so they are compact. The nuclear envelope breaks down, releasing the chromosomes. </p>
+    <h2>Metaphase</h2>
+    <p>In metaphase, the spindle has captured all the chromosomes and lined them up at the middle of the cell, so they are ready to divide.
+    </p>
+    <li>All the chromosomes align at the metaphase plate. This is not a physical structure in the cell, but a term for the plane where the chromosomes line up.
+    </li>
+    <li>At this stage, the two kinetochores of each chromosome should be attached to microtubules from opposite spindle poles.
+    </li><br>
+    <br>
+    <p>Before going on to anaphase, the cell goes through a checkpoint to make sure that all chromosomes are at the metaphase plate with their kinetochores correctly attached to the microtubules. This is called the spindle checkpoint and it helps make sure
+      that the sister chromatids will split evenly between the two daughter cells when they separate in anaphase. If a chromosome is not properly aligned or attached, the cell will hold off on division until the problem is fixed.
+    </p>
+    <h2>Anaphase</h2>
+    <p>In anaphase, the sister chromatids separate from each other and are pulled towards opposite ends of the cell. Each is now its own chromosome.
+    </p>
+    <li>Microtubules that are not attached to chromosomes elongate and push apart, separating the poles and making the cell longer.
+    </li>
+    <li>(All of these processes are driven by motor proteins, which are molecular machines that move along microtubule tracks and carry a cargo. In mitosis, motor proteins carry chromosomes or other microtubules as they move.)
+    </li>
+    <h2>Telaphase</h2>
+    <p>In telophase, the cell is almost done dividing and it starts to re-establish its normal structures as cytokinesis, or the division of the cell contents, takes place.
+    </p>
+    <li>The mitotic spindle is broken down into its basics.</li>
+    <li>Two new nuclei are formed, one for each set of chromosomes. Then, nuclear membranes and the nucleoli reappear.
+    </li>
+    <li>The chromosomes begin to decondense and return to their original string form.</li>
+    <li>Cytokinesis is the division of the cytoplasm to form two new cells and it can overlap within the final stages of mitosis. It can start in either anaphase or telophase, and finishes after telophase.
+    </li>
+    <li>When cytokinesis finishes, the end product is two new cells, in which each cell has a complete set of chromosomes identical to those of the mother cell. The daughter cells can now begin their own cellular “lives,” and can undergo mitosis themselves,
+      repeating the cycle.
+    </li>
+    <button>Click to find what what happens when Mitosis goes wrong!</button>
+  </div>
+  <p id=secret></p>
+
+</body>
+
+</html>
